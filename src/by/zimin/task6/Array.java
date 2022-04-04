@@ -5,6 +5,7 @@ import by.zimin.general.ArrayInt;
 import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 
 public class Array implements IMath {
@@ -15,8 +16,9 @@ public class Array implements IMath {
         Array ar = new Array();
         Random random = new Random();
 
-        for (int i = 0; i < list.getSize() - 1; i++) {
-            list.addElement(random.nextInt(1, 99));
+
+        for (int i = 0; i < list.getSize(); i++) {
+            list.addElement(random.nextInt(5, 99));
         }
         int[] array = new int[list.getSize()];
         for (int i = 0; i < array.length - 1; i++) {
@@ -43,8 +45,8 @@ public class Array implements IMath {
 
     @Override
     public int min(int[] arr) {
-        int minElement = arr[0];
-        for (int i = 0; i < arr.length; i++) {
+        int minElement = arr[4];
+        for (int i = 0; i < arr.length - 1; i++) {
             if (minElement > arr[i]) {
                 minElement = arr[i];
             }

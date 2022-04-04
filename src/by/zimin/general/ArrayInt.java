@@ -12,7 +12,7 @@ public class ArrayInt {
     public ArrayInt(ArrayList<Integer> array, int capasity) {
         this.array = array;
         this.capasity = capasity;
-        this.array = new ArrayList<>(capasity);
+       //this.array = new ArrayList<>(capasity);
 
     }
 
